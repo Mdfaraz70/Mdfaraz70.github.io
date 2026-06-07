@@ -1,69 +1,306 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>MD Faraz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MD Faraz | Personal Blog</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
 body{
-    background: linear-gradient(135deg,#0f172a,#1e293b);
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
-    padding:30px;
+font-family:Arial, sans-serif;
+background:#f4e7d3;
+color:#2b2b2b;
+line-height:1.7;
 }
 
-img{
-    width:180px;
-    border-radius:50%;
-    border:4px solid white;
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+padding:15px;
+z-index:1000;
+text-align:center;
 }
 
-h1{
-    font-size:45px;
+nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:bold;
 }
 
-.card{
-    background:rgba(255,255,255,0.1);
-    padding:20px;
-    border-radius:15px;
-    margin:auto;
-    max-width:700px;
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('IMG_20260427_235134_673.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #f4e7d3;
+box-shadow:0 0 25px rgba(0,0,0,.5);
+}
+
+.hero h1{
+font-size:55px;
+margin-top:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#d6a85f;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+margin-bottom:20px;
+font-size:35px;
+color:#2b2b2b;
+}
+
+.about,
+.journey,
+.work,
+.contact{
+background:white;
+margin-bottom:20px;
+border-radius:15px;
+padding:40px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.blog-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.blog-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+}
+
+.contact a{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:#2b2b2b;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+footer{
+background:#2b2b2b;
+color:white;
+text-align:center;
+padding:25px;
 }
 </style>
-
 </head>
 
 <body>
 
-<img src="myphoto.jpg">
+<nav>
+<a href="#about">About</a>
+<a href="#journey">Journey</a>
+<a href="#blog">Blog</a>
+<a href="#gallery">Gallery</a>
+<a href="#work">Work</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<h1>MD Faraz</h1>
+<div class="hero">
 
-<div class="card">
+<div class="hero-content">
+
+<img src="IMG_20260505_232843_894.jpg">
+
+<h1>MD FARAZ</h1>
+
+<p>Student • Blogger • Digital Entrepreneur</p>
+
+<p>
+Exploring technology, content creation,
+online business and lifelong learning.
+</p>
+
+<a href="#about" class="btn">Read My Story</a>
+
+</div>
+
+</div>
+
+<section id="about">
+
+<div class="about">
+
 <h2>About Me</h2>
 
 <p>
-Hello! I am MD Faraz from Prayagraj, India.
-I am a Class 12 student, blogger, learner and aspiring content creator.
+Hello, I'm MD Faraz from Prayagraj, India.
+I am a student, blogger and digital entrepreneur
+with interests in technology, machine learning,
+content creation, website development and
+online business opportunities.
 </p>
 
-<h2>My Interests</h2>
+<br>
 
 <p>
-📚 Education<br>
-✈️ Travel Vlogs<br>
-🎮 Gaming<br>
-💻 Technology<br>
-📸 Photography
-</p>
-
-<h2>My Goals</h2>
-
-<p>
-To build a successful online presence, create useful content and help people through technology.
+This website is my personal space where I
+share experiences, projects, ideas, learning
+journeys and future goals.
 </p>
 
 </div>
+
+</section>
+
+<section id="journey">
+
+<div class="journey">
+
+<h2>My Journey</h2>
+
+<p>📚 Student and lifelong learner.</p>
+<p>💻 Building websites and digital projects.</p>
+<p>📝 Exploring content writing and blogging.</p>
+<p>🚀 Learning new skills and creating opportunities online.</p>
+<p>🎯 Working towards a future in technology and innovation.</p>
+
+</div>
+
+</section>
+
+<section id="blog">
+
+<h2>Latest Blog Topics</h2>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+<h3>Life After Class 12</h3>
+<p>My experiences, goals and future plans.</p>
+</div>
+
+<div class="blog-card">
+<h3>Building My First Website</h3>
+<p>How I started creating my online presence.</p>
+</div>
+
+<div class="blog-card">
+<h3>Technology & Learning</h3>
+<p>Lessons and discoveries from my learning journey.</p>
+</div>
+
+<div class="blog-card">
+<h3>Future Projects</h3>
+<p>Ideas and goals I want to achieve.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="IMG_20260505_232843_894.jpg">
+
+<img src="IMG_20260427_235134_673.jpg">
+
+</div>
+
+</section>
+
+<section id="work">
+
+<div class="work">
+
+<h2>Work With Me</h2>
+
+<p>• Affiliate Marketing</p>
+<p>• Content Writing</p>
+<p>• Blogging</p>
+<p>• Website Projects</p>
+<p>• Digital Collaborations</p>
+<p>• Sponsored Content Opportunities</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>Contact</h2>
+
+<a href="https://instagram.com/mr.mdfaraz">Instagram</a>
+
+<a href="https://t.me/heyfrz">Telegram</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 MD Faraz. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 </html>
