@@ -209,22 +209,43 @@ margin:6px;
 }
 
 }
+#themeBtn{
+padding:8px 12px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+margin-left:10px;
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .about,
+.dark .journey,
+.dark .work,
+.dark .contact,
+.dark .blog-card{
+background:#222;
+color:white;
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-<button onclick="toggleTheme()" id="themeBtn">
-🌙
-</button>
+
 <a href="#about">About</a>
 <a href="#journey">Journey</a>
 <a href="#blog">Blog</a>
 <a href="#gallery">Gallery</a>
 <a href="#work">Work</a>
 <a href="#contact">Contact</a>
-
+<button onclick="toggleTheme()" id="themeBtn">
+🌙
+</button>
 <a href="login.html" class="nav-btn">Login</a>
 
 <a href="signup.html" class="nav-btn signup">Sign Up</a>
@@ -407,6 +428,9 @@ setTimeout(type,80);
 }
 
 window.onload = type;
+function toggleTheme(){
+document.body.classList.toggle("dark");
+}
 </script>
 </body>
 </html>
