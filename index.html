@@ -212,7 +212,7 @@ background:#d4a373;
 <img src="IMG_20260505_232843_894.jpg">
 
 <h1>MD FARAZ</h1>
-
+<p id="typing"></p>
 <p>Student • Blogger • Digital Entrepreneur</p>
 
 <p>
@@ -369,6 +369,21 @@ Email: contact@mdfaraz.dpdns.org
 <p>© 2026 MD Faraz. All Rights Reserved.</p>
 
 </footer>
+<script>
+const text =
+"Student • Blogger • Digital Creator • Tech Explorer";
 
+let i = 0;
+
+function type(){
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(type,80);
+}
+}
+
+window.onload = type;
+</script>
 </body>
 </html>
