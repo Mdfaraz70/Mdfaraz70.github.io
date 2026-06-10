@@ -230,6 +230,57 @@ color:white;
 background:#222;
 color:white;
 }
+nav{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+background:rgba(0,0,0,.8);
+padding:12px;
+}
+
+nav a{
+font-size:15px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+#themeBtn{
+position:fixed;
+top:15px;
+right:15px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+cursor:pointer;
+font-size:20px;
+z-index:9999;
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .about,
+.dark .journey,
+.dark .work,
+.dark .contact,
+.dark .blog-card{
+background:#222;
+color:white;
+}
+
+.dark footer{
+background:#000;
+}
+
+.dark nav{
+background:#000;
+}
 </style>
 </head>
 
